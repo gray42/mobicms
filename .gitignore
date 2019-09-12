@@ -1,0 +1,25 @@
+# Common ignores
+/.idea
+/composer.lock
+/vendor
+
+# Config folder ignores
+/config/autoload/*.local.php
+/config/components/*
+!/config/components/README.txt
+/config/routes/*
+!/config/routes/README.txt
+
+# Data storage ignores
+/data/cache/*
+!/data/cache/.gitkeep
+/data/logs/*
+!/data/logs/.gitkeep
+
+# Public folder ignores
+/public/assets/*
+!/public/assets/index.html
+!/public/assets/README.txt
+/public/data/*
+!/public/data/index.html
+!/public/data/README.txt
