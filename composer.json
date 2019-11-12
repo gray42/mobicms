@@ -37,7 +37,7 @@
         "php": "^7.3",
         "ext-PDO": "^7.3",
         "ext-mbstring": "^7.3",
-        "mobicms-modules/expressive-demo-app": "dev-master",
+        "mobicms-modules/metapackage": "dev-master",
         "mobicms/component-installer": "dev-develop",
         "mobicms/system": "dev-develop"
     },
