@@ -33,9 +33,9 @@ if (DEBUG) {
     error_reporting(E_ALL);
     ini_set('display_errors', 'On');
     ini_set('log_errors', 'On');
-    ini_set('error_log', CMS_PATH_LOG . 'errors-' . date('Y-m-d') . '.log');
+    ini_set('error_log', M_PATH_LOG . 'errors-' . date('Y-m-d') . '.log');
 } else {
-    ini_set('error_reporting', E_ALL & ~E_DEPRECATED & ~E_STRICT);
+    error_reporting(E_ALL & ~E_DEPRECATED & ~E_STRICT);
     ini_set('display_errors', 'Off');
     ini_set('log_errors', 'Off');
 }
@@ -49,7 +49,7 @@ if (DEBUG) {
     $factory = $container->get(MiddlewareFactory::class);
 
     // Execute programmatic/declarative middleware pipeline and routing configuration statements
-    (require CMS_PATH_CONFIG . 'routes.php')($app, $factory, $container);
+    (require M_PATH_CONFIG . 'routes.php')($app, $factory, $container);
 
     $app->run();
 })();

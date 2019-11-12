@@ -13,19 +13,19 @@ declare(strict_types=1);
 const DEBUG = true;
 
 // Profiling
-define('CMS_START_MEMORY', memory_get_usage());
-define('CMS_START_TIME', microtime(true));
+define('M_START_MEMORY', memory_get_usage());
+define('M_START_TIME', microtime(true));
 
 // System wide constants
-define('CMS_PATH_ROOT', dirname(__DIR__) . DIRECTORY_SEPARATOR);
-const CMS_PATH_CONFIG = __DIR__ . DIRECTORY_SEPARATOR;
-const CMS_PATH_SYSTEM = CMS_PATH_ROOT . 'mobicms' . DIRECTORY_SEPARATOR;
-const CMS_PATH_DATA = CMS_PATH_ROOT . 'data' . DIRECTORY_SEPARATOR;
+const DS = DIRECTORY_SEPARATOR;
+define('M_PATH_ROOT', dirname(__DIR__) . DS);
+const M_PATH_CONFIG = __DIR__ . DS;
+const M_PATH_DATA = M_PATH_ROOT . 'data' . DS;
 
-const CMS_PATH_PUBLIC = CMS_PATH_ROOT . 'public' . DIRECTORY_SEPARATOR;
-const CMS_PATH_CACHE = CMS_PATH_DATA . 'cache' . DIRECTORY_SEPARATOR;
-const CMS_PATH_LOG = CMS_PATH_DATA . 'logs' . DIRECTORY_SEPARATOR;
+const M_PATH_PUBLIC = M_PATH_ROOT . 'public' . DS;
+const M_PATH_CACHE = M_PATH_DATA . 'cache' . DS;
+const M_PATH_LOG = M_PATH_DATA . 'logs' . DS;
 
 // System files
-const CMS_FILE_CONFIG_CACHE = CMS_PATH_CACHE . 'system-config.cache';
-const CMS_FILE_CONFIG_ROUTES = CMS_PATH_CONFIG . 'routes.php';
+const M_FILE_CONFIG_CACHE = M_PATH_CACHE . 'system-config.cache';
+const M_FILE_CONFIG_ROUTES = M_PATH_CONFIG . 'routes.php';
