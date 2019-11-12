@@ -7,8 +7,8 @@
 /config/autoload/*.local.php
 /config/components/*
 !/config/components/README.txt
-/config/routes/*
-!/config/routes/README.txt
+/config/modules/*
+!/config/modules/README.txt
 
 # Data storage ignores
 /data/cache/*
