@@ -10,7 +10,7 @@ declare(strict_types=1);
  * @link        http://mobicms.org mobiCMS Project
  */
 
-use Zend\ConfigAggregator\ConfigAggregator;
+use Laminas\ConfigAggregator\ConfigAggregator;
 
 return [
     // Toggle the configuration cache

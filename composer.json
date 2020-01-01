@@ -51,6 +51,36 @@
             "config/constants.php"
         ]
     },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "git@github.com:laminas/laminas-diactoros.git"
+        },
+        {
+            "type": "git",
+            "url": "git@github.com:laminas/laminas-servicemanager.git"
+        },
+        {
+            "type": "git",
+            "url": "git@github.com:laminas/laminas-config-aggregator.git"
+        },
+        {
+            "type": "git",
+            "url": "git@github.com:laminas/laminas-stdlib.git"
+        },
+        {
+            "type": "git",
+            "url": "git@github.com:laminas/laminas-httphandlerrunner.git"
+        },
+        {
+            "type": "git",
+            "url": "git@github.com:laminas/laminas-stratigility.git"
+        },
+        {
+            "type": "git",
+            "url": "git@github.com:laminas/laminas-escaper.git"
+        }
+    ],
     "scripts": {
         "check": [
             "@cs-check"

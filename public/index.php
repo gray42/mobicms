@@ -12,8 +12,8 @@ declare(strict_types=1);
 
 use Mobicms\System\Container\Factory;
 use Psr\Container\ContainerInterface;
-use Zend\Expressive\Application;
-use Zend\Expressive\MiddlewareFactory;
+use Mezzio\Application;
+use Mezzio\MiddlewareFactory;
 
 if (PHP_VERSION_ID < 70300) {
     die('<h1 style="color: #dd0000">ERROR: outdated version of PHP</h1>');
