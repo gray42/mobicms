@@ -1,16 +1,18 @@
 <?php
 
-declare(strict_types=1);
-
-/*
+/**
  * This file is part of mobiCMS Content Management System.
  *
  * @copyright   Oleg Kasyanov <dev@mobicms.net>
- * @license     https://opensource.org/licenses/GPL-3.0 GPL-3.0 (see the LICENSE.md file)
+ * @license     https://opensource.org/licenses/GPL-3.0 GPL-3.0 (see the LICENSE file)
  * @link        http://mobicms.org mobiCMS Project
  */
 
-use Zend\Expressive\Application;
+declare(strict_types=1);
+
+use Mezzio\Application;
+use Mobicms\Modules\ExpressiveDemoApp\Handler\HomePageHandler;
+use Mobicms\Modules\ExpressiveDemoApp\Handler\PingHandler;
 
 /**
  * Setup routes with a single request method:
@@ -34,11 +36,11 @@ use Zend\Expressive\Application;
  * $app->route(
  *     '/contact',
  *     App\Handler\ContactHandler::class,
- *     Zend\Expressive\Router\Route::HTTP_METHOD_ANY,
+ *     Mezzio\Router\Route::HTTP_METHOD_ANY,
  *     'contact'
  * );
  */
-return function (Application $app) : void {
-    $app->get('/', \Mobicms\Modules\ExpressiveDemoApp\Handler\HomePageHandler::class, 'home');
-    $app->get('/api/ping', \Mobicms\Modules\ExpressiveDemoApp\Handler\PingHandler::class, 'api.ping');
+return function (Application $app): void {
+    $app->get('/', HomePageHandler::class, 'home');
+    $app->get('/api/ping', PingHandler::class, 'api.ping');
 };

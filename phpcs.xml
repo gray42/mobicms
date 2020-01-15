@@ -2,6 +2,14 @@
 <ruleset name="mobiCMS coding standard">
     <description>mobiCMS coding standard</description>
 
+    <!-- Paths to check -->
+    <file>config</file>
+    <file>public</file>
+
+    <!-- Paths to exclude -->
+    <exclude-pattern>config/components/*</exclude-pattern>
+    <exclude-pattern>config/modules/*</exclude-pattern>
+
     <!-- display progress -->
     <arg value="p"/>
     <arg name="colors"/>
@@ -14,8 +22,4 @@
             <property name="ignoreBlankLines" value="false"/>
         </properties>
     </rule>
-
-    <!-- Paths to check -->
-    <file>config</file>
-    <file>public</file>
 </ruleset>
