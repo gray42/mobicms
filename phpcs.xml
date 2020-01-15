@@ -7,7 +7,7 @@
     <arg name="colors"/>
 
     <!-- inherit rules from: -->
-    <rule ref="PSR2"/>
+    <rule ref="PSR12"/>
     <rule ref="Generic.Arrays.DisallowLongArraySyntax"/>
     <rule ref="Squiz.WhiteSpace.SuperfluousWhitespace">
         <properties>
@@ -16,7 +16,6 @@
     </rule>
 
     <!-- Paths to check -->
-    <file>mobicms/src</file>
     <file>config</file>
     <file>public</file>
 </ruleset>
