@@ -8,7 +8,9 @@
         "mobicms",
         "cms",
         "php",
-        "mysql"
+        "mysql",
+        "psr-7",
+        "middleware"
     ],
     "authors": [
         {
@@ -35,14 +37,14 @@
     "prefer-stable": true,
     "require": {
         "php": "^7.3",
-        "ext-PDO": "^7.3",
-        "ext-mbstring": "^7.3",
+        "ext-PDO": "*",
+        "ext-mbstring": "*",
         "mobicms-modules/metapackage": "dev-master",
         "mobicms/component-installer": "dev-develop",
         "mobicms/system": "dev-develop"
     },
     "require-dev": {
-        "filp/whoops": "^2.5",
+        "filp/whoops": "^2.7",
         "roave/security-advisories": "dev-master",
         "squizlabs/php_codesniffer": "^3.5"
     },
@@ -51,36 +53,6 @@
             "config/constants.php"
         ]
     },
-    "repositories": [
-        {
-            "type": "git",
-            "url": "git@github.com:laminas/laminas-diactoros.git"
-        },
-        {
-            "type": "git",
-            "url": "git@github.com:laminas/laminas-servicemanager.git"
-        },
-        {
-            "type": "git",
-            "url": "git@github.com:laminas/laminas-config-aggregator.git"
-        },
-        {
-            "type": "git",
-            "url": "git@github.com:laminas/laminas-stdlib.git"
-        },
-        {
-            "type": "git",
-            "url": "git@github.com:laminas/laminas-httphandlerrunner.git"
-        },
-        {
-            "type": "git",
-            "url": "git@github.com:laminas/laminas-stratigility.git"
-        },
-        {
-            "type": "git",
-            "url": "git@github.com:laminas/laminas-escaper.git"
-        }
-    ],
     "scripts": {
         "check": [
             "@cs-check"
